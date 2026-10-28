@@ -5,23 +5,23 @@ class Wherry < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.23/wherry_v0.1.0-rc.23_darwin_arm64.tar.gz"
-      sha256 "a3f7eb07104f3f665344899311e3192c6333a93604116f62d457350b364e5804"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.24/wherry_v0.1.0-rc.24_darwin_arm64.tar.gz"
+      sha256 "b027b60337b22cf860397c3f6058f6a030b6f2e146b5fa0f5e92ef173e59facd"
     end
     on_intel do
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.23/wherry_v0.1.0-rc.23_darwin_amd64.tar.gz"
-      sha256 "8a071f7a6a7db583b280e1f0194f217787f5a705e72be4291aefd0447d7cdec4"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.24/wherry_v0.1.0-rc.24_darwin_amd64.tar.gz"
+      sha256 "4fbcb2fd5023f84edab9d4af39d4ea5619cc7b5e78b219600a48fc65cdae9687"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.23/wherry_v0.1.0-rc.23_linux_arm64.tar.gz"
-      sha256 "4f3498ac7dd20c38bc9224ab481713ed0d9ccd3ca324e260f88e274687082087"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.24/wherry_v0.1.0-rc.24_linux_arm64.tar.gz"
+      sha256 "f02c1ffdfa0c9c730c63e06127f784210828eb3d084d1bb9566773897cb95923"
     end
     on_intel do
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.23/wherry_v0.1.0-rc.23_linux_amd64.tar.gz"
-      sha256 "b7da6956e8ffc61b63487ddb7388e48069336946eec0d91d88c5f91ac96db68b"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.24/wherry_v0.1.0-rc.24_linux_amd64.tar.gz"
+      sha256 "42f42503e0fcd42ad66f89237cfc9eda5db3b8f601f55c3ef0190dbd0d009df4"
     end
   end
 
