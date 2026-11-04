@@ -5,21 +5,21 @@
 class Wherry < Formula
   desc "Delegate coding agent tasks to receivers on other compute over Kafka"
   homepage "https://benemon.github.io/wherry/"
-  version "0.1.0-rc.27"
+  version "0.1.0-rc.28"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.27/wherry_v0.1.0-rc.27_darwin_amd64.tar.gz"
-      sha256 "4b4cf16def451870e1461c79195dbe4d8f50f0869aec6a981e450529d8dac871"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.28/wherry_v0.1.0-rc.28_darwin_amd64.tar.gz"
+      sha256 "5a4d4040287b71f5a0f286fca7e2123c00230ac35f9bea57932ead441ae7e0e5"
 
       define_method(:install) do
         bin.install "wherry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.27/wherry_v0.1.0-rc.27_darwin_arm64.tar.gz"
-      sha256 "abd263f94274ddf6f05751c97d5b0c7e726fbf4162a5589f711684f5ed0d5e2f"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.28/wherry_v0.1.0-rc.28_darwin_arm64.tar.gz"
+      sha256 "0f87804801aa440a657e8692ec504d7fa0880ca925db3da8088310ed51e7e0b3"
 
       define_method(:install) do
         bin.install "wherry"
@@ -29,15 +29,15 @@ class Wherry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.27/wherry_v0.1.0-rc.27_linux_amd64.tar.gz"
-      sha256 "fe268f8f95209077c8adbd17cbe3785d36e8816b5b55e22fa1fe28511b001566"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.28/wherry_v0.1.0-rc.28_linux_amd64.tar.gz"
+      sha256 "d380feda82bf294cb660fd4c87b9f6449eff69239fc4182af05b56463f013b74"
       define_method(:install) do
         bin.install "wherry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.27/wherry_v0.1.0-rc.27_linux_arm64.tar.gz"
-      sha256 "3ffdc7ef532e729b63989ecd72a1636a5f703a198582938731937f2369b99a35"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.0-rc.28/wherry_v0.1.0-rc.28_linux_arm64.tar.gz"
+      sha256 "82fdd52c8d763579766f6006dda298f78c32ac1d26ef99f0a9ae8e2f25ec0a78"
       define_method(:install) do
         bin.install "wherry"
       end
