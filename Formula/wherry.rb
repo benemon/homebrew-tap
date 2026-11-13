@@ -5,21 +5,21 @@
 class Wherry < Formula
   desc "Delegate coding agent tasks to receivers on other compute over Kafka"
   homepage "https://benemon.github.io/wherry/"
-  version "0.1.1"
+  version "0.1.2"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.1/wherry_v0.1.1_darwin_amd64.tar.gz"
-      sha256 "7125b2633e9d83b8c9a2ac52fc8e86a0f8621de72d57db8a41f98e4d015ba1e9"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.2/wherry_v0.1.2_darwin_amd64.tar.gz"
+      sha256 "f5a7b4337830951c3898d651610d86465dced977f29a26ab733aad1afbf28c81"
 
       define_method(:install) do
         bin.install "wherry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.1/wherry_v0.1.1_darwin_arm64.tar.gz"
-      sha256 "1ad04ce2c2c6efe18e99d6cd051891a319f7adc624361a8922cd4a0da529953b"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.2/wherry_v0.1.2_darwin_arm64.tar.gz"
+      sha256 "aba149657eb71c7b5d39dfb7279c82ecc7faa836420a3202bb5029dc65188dbf"
 
       define_method(:install) do
         bin.install "wherry"
@@ -29,15 +29,15 @@ class Wherry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.1/wherry_v0.1.1_linux_amd64.tar.gz"
-      sha256 "a3f15322cabfc5abb8d4d29818ce3991c6db041bdef3c17debeef423e6fb4d38"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.2/wherry_v0.1.2_linux_amd64.tar.gz"
+      sha256 "042355fa80bac5c5928eaba75021ce28d087864dada7a2c9e03ed58471751ec8"
       define_method(:install) do
         bin.install "wherry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benemon/wherry/releases/download/v0.1.1/wherry_v0.1.1_linux_arm64.tar.gz"
-      sha256 "b4143634a8e759424982ed2f824e9bf2f742b7dd8de2e50dd2fe9fc0ec1f24bf"
+      url "https://github.com/benemon/wherry/releases/download/v0.1.2/wherry_v0.1.2_linux_arm64.tar.gz"
+      sha256 "716fa965a53f098e43efc6f5c6e0c914387b14cb4b578c70d732ad0ce6bbec1c"
       define_method(:install) do
         bin.install "wherry"
       end
